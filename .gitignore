@@ -33,3 +33,4 @@ coverage
 *-lock.*
 
 .env
+/src/generated/prisma

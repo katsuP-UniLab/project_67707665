@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "vite",
+    "dev:server": "pnpx nodemon ./servers/app.ts",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
@@ -16,11 +17,19 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.12",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "ez-serve": "^1.0.2",
+    "flowbite": "^3.1.2",
+    "nodemon": "^3.1.10",
+    "tailwindcss": "^4.1.12",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.2",
+    "@types/express": "^5.0.3",
     "@types/node": "^22.16.5",
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/eslint-config-prettier": "^10.2.0",

@@ -1,35 +1,21 @@
-@import './base.css';
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Thai:100,200,300,regular,500,600,700);
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+@theme {
+  --font-display: 'IBM Plex Sans Thai', 'sans-serif';
+
+  --color-living-coral: rgb(254, 110, 111);
+  --color-jet: rgb(46, 47, 47);
+  --color-pastel-black: rgb(10, 10, 10);
+  --color-whitesmoke: rgb(245, 245, 245);
+  --color-overlay: rgba(0, 0, 0, 0.6);
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+* {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  transition: all .3s;
 }
